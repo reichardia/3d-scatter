@@ -1,0 +1,191 @@
+[
+  {
+     "Subject ID":"191622515-10006-1257",
+     "Indication":"NDO",
+     "Treatment cycle":"9",
+     "Dose":"200",
+     "Treatment interval":"144.75"
+  },
+  {
+     "Subject ID":"191622515-10013-1555",
+     "Indication":"NDO",
+     "Treatment cycle":"6",
+     "Dose":"300",
+     "Treatment interval":"147"
+  },
+  {
+     "Subject ID":"191622515-10013-1557",
+     "Indication":"NDO",
+     "Treatment cycle":"2",
+     "Dose":"200",
+     "Treatment interval":"186"
+  },
+  {
+     "Subject ID":"191622515-10026-3671",
+     "Indication":"NDO",
+     "Treatment cycle":"6",
+     "Dose":"200",
+     "Treatment interval":"130.2"
+  },
+  {
+     "Subject ID":"191622515-10901-2551",
+     "Indication":"NDO",
+     "Treatment cycle":"6",
+     "Dose":"300",
+     "Treatment interval":"196.2"
+  },
+  {
+     "Subject ID":"191622515-10903-4860",
+     "Indication":"NDO",
+     "Treatment cycle":"7",
+     "Dose":"300",
+     "Treatment interval":"168.6666667"
+  },
+  {
+     "Subject ID":"191622515-16601-5301",
+     "Indication":"NDO",
+     "Treatment cycle":"5",
+     "Dose":"280",
+     "Treatment interval":"301.5"
+  },
+  {
+     "Subject ID":"191622516-10014-5461",
+     "Indication":"NDO",
+     "Treatment cycle":"8",
+     "Dose":"200",
+     "Treatment interval":"133.5714286"
+  },
+  {
+     "Subject ID":"191622095-10051-1771",
+     "Indication":"OAB",
+     "Treatment cycle":"5",
+     "Dose":"140",
+     "Treatment interval":"126"
+  },
+  {
+     "Subject ID":"191622520-10007-1028",
+     "Indication":"OAB",
+     "Treatment cycle":"8",
+     "Dose":"106",
+     "Treatment interval":"121.1428571"
+  },
+  {
+     "Subject ID":"191622520-12505-1301",
+     "Indication":"OAB",
+     "Treatment cycle":"2",
+     "Dose":"125",
+     "Treatment interval":"168"
+  },
+  {
+     "Subject ID":"191622017-2302-5061",
+     "Indication":"CD",
+     "Treatment cycle":"1",
+     "Dose":"300",
+     "Treatment interval":""
+  },
+  {
+     "Subject ID":"191622017-2325-4060",
+     "Indication":"CD",
+     "Treatment cycle":"8",
+     "Dose":"228",
+     "Treatment interval":"101"
+  },
+  {
+     "Subject ID":"191622017-3676-1559",
+     "Indication":"CD",
+     "Treatment cycle":"8",
+     "Dose":"288",
+     "Treatment interval":"75"
+  },
+  {
+     "Subject ID":"191622017-3772-1458",
+     "Indication":"CD",
+     "Treatment cycle":"6",
+     "Dose":"117",
+     "Treatment interval":"75.2"
+  },
+  {
+     "Subject ID":"191622016-3158-3168",
+     "Indication":"HH",
+     "Treatment cycle":"2",
+     "Dose":"100",
+     "Treatment interval":"256"
+  },
+  {
+     "Subject ID":"191622016-3160-3030",
+     "Indication":"HH",
+     "Treatment cycle":"4",
+     "Dose":"125",
+     "Treatment interval":"187.6666667"
+  },
+  {
+     "Subject ID":"191622016-3187-4205",
+     "Indication":"HH",
+     "Treatment cycle":"2",
+     "Dose":"100",
+     "Treatment interval":"212"
+  },
+  {
+     "Subject ID":"191622505-2763-126",
+     "Indication":"HH",
+     "Treatment cycle":"1",
+     "Dose":"100",
+     "Treatment interval":""
+  },
+  {
+     "Subject ID":"191622008-3002-302",
+     "Indication":"post-stroke spasticity",
+     "Treatment cycle":"1",
+     "Dose":"200",
+     "Treatment interval":""
+  },
+  {
+     "Subject ID":"191622056-3002-2707",
+     "Indication":"post-stroke spasticity",
+     "Treatment cycle":"4",
+     "Dose":"350",
+     "Treatment interval":"87.33333333"
+  },
+  {
+     "Subject ID":"191622010-0228-A02",
+     "Indication":"GL",
+     "Treatment cycle":"2",
+     "Dose":"20",
+     "Treatment interval":"111"
+  },
+  {
+     "Subject ID":"191622010-1978-M06",
+     "Indication":"GL",
+     "Treatment cycle":"1",
+     "Dose":"20",
+     "Treatment interval":""
+  },
+  {
+     "Subject ID":"191622010-2046-C07",
+     "Indication":"GL",
+     "Treatment cycle":"1",
+     "Dose":"20",
+     "Treatment interval":""
+  },
+  {
+     "Subject ID":"191622111-14407-4289",
+     "Indication":"Ped LL spasticity",
+     "Treatment cycle":"4",
+     "Dose":"262",
+     "Treatment interval":"250.6666667"
+  },
+  {
+     "Subject ID":"191622111-14407-4418",
+     "Indication":"Ped LL spasticity",
+     "Treatment cycle":"1",
+     "Dose":"200",
+     "Treatment interval":""
+  },
+  {
+     "Subject ID":"191622111-15905-4335",
+     "Indication":"Ped LL spasticity",
+     "Treatment cycle":"6",
+     "Dose":"220",
+     "Treatment interval":"215.6"
+  }
+]
