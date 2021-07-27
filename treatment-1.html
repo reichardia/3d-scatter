@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script>
+  const data = [{
+        "Subject ID": "191622515-10006-1257",
+        "Indication": "NDO",
+        "Number of prior treatment cycles": "9",
+        "Most recent dose": "200",
+        "Prior treatment interval": "112"
+      },
+      {
+        "Subject ID": "191622515-10013-1555",
+        "Indication": "NDO",
+        "Number of prior treatment cycles": "6",
+        "Most recent dose": "300",
+        "Prior treatment interval": "98"
+      },
+      {
+        "Subject ID": "191622515-10013-1557",
+        "Indication": "NDO",
+        "Number of prior treatment cycles": "2",
+        "Most recent dose": "200",
+        "Prior treatment interval": "186"
+      },
+      {
+        "Subject ID": "191622515-10026-3671",
+        "Indication": "NDO",
+        "Number of prior treatment cycles": "6",
+        "Most recent dose": "300",
+        "Prior treatment interval": "98"
+      },
+      {
+        "Subject ID": "191622515-10901-2551",
+        "Indication": "NDO",
+        "Number of prior treatment cycles": "6",
+        "Most recent dose": "300",
+        "Prior treatment interval": "151"
+      },
+      {
+        "Subject ID": "191622515-10903-4860",
+        "Indication": "NDO",
+        "Number of prior treatment cycles": "7",
+        "Most recent dose": "300",
+        "Prior treatment interval": "129"
+      },
+      {
+        "Subject ID": "191622515-16601-5301",
+        "Indication": "NDO",
+        "Number of prior treatment cycles": "5",
+        "Most recent dose": "200",
+        "Prior treatment interval": "266"
+      },
+      {
+        "Subject ID": "191622516-10014-5461",
+        "Indication": "NDO",
+        "Number of prior treatment cycles": "8",
+        "Most recent dose": "200",
+        "Prior treatment interval": "84"
+      },
+      {
+        "Subject ID": "191622095-10051-1771",
+        "Indication": "OAB",
+        "Number of prior treatment cycles": "5",
+        "Most recent dose": "150",
+        "Prior treatment interval": "111"
+      },
+      {
+        "Subject ID": "191622520-10007-1028",
+        "Indication": "OAB",
+        "Number of prior treatment cycles": "8",
+        "Most recent dose": "150",
+        "Prior treatment interval": "92"
+      },
+      {
+        "Subject ID": "191622520-12505-1301",
+        "Indication": "OAB",
+        "Number of prior treatment cycles": "2",
+        "Most recent dose": "150",
+        "Prior treatment interval": "168"
+      },
+      {
+        "Subject ID": "191622017-2302-5061",
+        "Indication": "CD",
+        "Number of prior treatment cycles": "1",
+        "Most recent dose": "300",
+        "Prior treatment interval": ""
+      },
+      {
+        "Subject ID": "191622017-2325-4060",
+        "Indication": "CD",
+        "Number of prior treatment cycles": "8",
+        "Most recent dose": "200",
+        "Prior treatment interval": "84"
+      },
+      {
+        "Subject ID": "191622017-3676-1559",
+        "Indication": "CD",
+        "Number of prior treatment cycles": "8",
+        "Most recent dose": "400",
+        "Prior treatment interval": "98"
+      },
+      {
+        "Subject ID": "191622017-3772-1458",
+        "Indication": "CD",
+        "Number of prior treatment cycles": "6",
+        "Most recent dose": "150",
+        "Prior treatment interval": "63"
+      },
+      {
+        "Subject ID": "191622016-3158-3168",
+        "Indication": "HH",
+        "Number of prior treatment cycles": "2",
+        "Most recent dose": "100",
+        "Prior treatment interval": "256"
+      },
+      {
+        "Subject ID": "191622016-3160-3030",
+        "Indication": "HH",
+        "Number of prior treatment cycles": "4",
+        "Most recent dose": "100",
+        "Prior treatment interval": "192"
+      },
+      {
+        "Subject ID": "191622016-3187-4205",
+        "Indication": "HH",
+        "Number of prior treatment cycles": "2",
+        "Most recent dose": "150",
+        "Prior treatment interval": "212"
+      },
+      {
+        "Subject ID": "191622505-2763-126",
+        "Indication": "HH",
+        "Number of prior treatment cycles": "1",
+        "Most recent dose": "100",
+        "Prior treatment interval": ""
+      },
+      {
+        "Subject ID": "191622008-3002-302",
+        "Indication": "post-stroke spasticity",
+        "Number of prior treatment cycles": "1",
+        "Most recent dose": "200",
+        "Prior treatment interval": ""
+      },
+      {
+        "Subject ID": "191622056-3002-2707",
+        "Indication": "post-stroke spasticity",
+        "Number of prior treatment cycles": "4",
+        "Most recent dose": "400",
+        "Prior treatment interval": "94"
+      },
+      {
+        "Subject ID": "191622010-0228-A02",
+        "Indication": "GL",
+        "Number of prior treatment cycles": "2",
+        "Most recent dose": "20",
+        "Prior treatment interval": "111"
+      },
+      {
+        "Subject ID": "191622010-1978-M06",
+        "Indication": "GL",
+        "Number of prior treatment cycles": "1",
+        "Most recent dose": "20",
+        "Prior treatment interval": ""
+      },
+      {
+        "Subject ID": "191622010-2046-C07",
+        "Indication": "GL",
+        "Number of prior treatment cycles": "1",
+        "Most recent dose": "20",
+        "Prior treatment interval": ""
+      },
+      {
+        "Subject ID": "191622111-14407-4289",
+        "Indication": "Ped LL spasticity",
+        "Number of prior treatment cycles": "4",
+        "Most recent dose": "296",
+        "Prior treatment interval": "84"
+      },
+      {
+        "Subject ID": "191622111-14407-4418",
+        "Indication": "Ped LL spasticity",
+        "Number of prior treatment cycles": "1",
+        "Most recent dose": "200",
+        "Prior treatment interval": ""
+      },
+      {
+        "Subject ID": "191622111-15905-4335",
+        "Indication": "Ped LL spasticity",
+        "Number of prior treatment cycles": "6",
+        "Most recent dose": "240",
+        "Prior treatment interval": "84"
+      }
+    ]
+    .filter(datum => datum["Prior treatment interval"])
+    .map(datum => [
+      Number(datum["Number of prior treatment cycles"]),
+      Number(datum["Most recent dose"]),
+      Number(datum["Prior treatment interval"]),
+    ]) //.filter();
+
+  const processedData = [[9, 200, 112],
+    [6, 300, 98],
+    [2, 200, 186],
+    [6, 300, 98],
+    [6, 300, 151],
+    [7, 300, 129],
+    [5, 200, 266],
+    [8, 200, 84],
+    [5, 150, 111],
+    [8, 150, 92],
+    [2, 150, 168],
+    [8, 200, 84],
+    [8, 400, 98],
+    [6, 150, 63],
+    [2, 100, 256],
+    [4, 100, 192],
+    [2, 150, 212],
+    [4, 400, 94],
+    [2, 20, 111],
+    [4, 296, 84],
+    [6, 240, 84]]
+</script>
+<script src="https://unpkg.com/d3-3d/build/d3-3d.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<body>
+  <svg width="960" height="500"></svg>
+  <style type="text/css">
+    button {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  </style>
+  <button>update</button>
+  <script>
+    var origin = [480, 300],
+      // j = 300,
+      j = 10,
+      scale = 20,
+      scatter = [],
+      yLine = [],
+      xGrid = [],
+      beta = 0,
+      alpha = 0,
+      key = function (d) {
+        return d.id;
+      },
+      startAngle = Math.PI / 4;
+    var svg = d3.select('svg').call(d3.drag().on('drag', dragged).on('start', dragStart).on('end', dragEnd)).append(
+      'g');
+    var color = d3.scaleOrdinal(d3.schemeCategory20);
+    var mx, my, mouseX, mouseY;
+
+    var grid3d = d3._3d()
+      .shape('GRID', 20)
+      .origin(origin)
+      .rotateY(startAngle)
+      .rotateX(-startAngle)
+      .scale(scale);
+
+    var point3d = d3._3d()
+      .x(function (d) {
+        return d.x;
+      })
+      .y(function (d) {
+        return d.y;
+      })
+      .z(function (d) {
+        return d.z;
+      })
+      .origin(origin)
+      .rotateY(startAngle)
+      .rotateX(-startAngle)
+      .scale(scale);
+
+    var yScale3d = d3._3d()
+      .shape('LINE_STRIP')
+      .origin(origin)
+      .rotateY(startAngle)
+      .rotateX(-startAngle)
+      .scale(scale);
+
+    function processData(data, tt) {
+
+      /* ----------- GRID ----------- */
+
+      var xGrid = svg.selectAll('path.grid').data(data[0], key);
+
+      xGrid
+        .enter()
+        .append('path')
+        .attr('class', '_3d grid')
+        .merge(xGrid)
+        .attr('stroke', 'black')
+        .attr('stroke-width', 0.3)
+        .attr('fill', function (d) {
+          return d.ccw ? 'lightgrey' : '#717171';
+        })
+        .attr('fill-opacity', 0.9)
+        .attr('d', grid3d.draw);
+
+      xGrid.exit().remove();
+
+      /* ----------- POINTS ----------- */
+
+      var points = svg.selectAll('circle').data(data[1], key);
+
+      points
+        .enter()
+        .append('circle')
+        .attr('class', '_3d')
+        .attr('opacity', 0)
+        .attr('cx', posPointX)
+        .attr('cy', posPointY)
+        .merge(points)
+        .transition().duration(tt)
+        .attr('r', 3)
+        .attr('stroke', function (d) {
+          return d3.color(color(d.id)).darker(3);
+        })
+        .attr('fill', function (d) {
+          return color(d.id);
+        })
+        .attr('opacity', 1)
+        .attr('cx', posPointX)
+        .attr('cy', posPointY);
+
+      points.exit().remove();
+
+      /* ----------- y-Scale ----------- */
+
+      var yScale = svg.selectAll('path.yScale').data(data[2]);
+
+      yScale
+        .enter()
+        .append('path')
+        .attr('class', '_3d yScale')
+        .merge(yScale)
+        .attr('stroke', 'black')
+        .attr('stroke-width', .5)
+        .attr('d', yScale3d.draw);
+
+      yScale.exit().remove();
+
+      /* ----------- y-Scale Text ----------- */
+
+      var yText = svg.selectAll('text.yText').data(data[2][0]);
+
+      yText
+        .enter()
+        .append('text')
+        .attr('class', '_3d yText')
+        .attr('dx', '.3em')
+        .merge(yText)
+        .each(function (d) {
+          d.centroid = {
+            x: d.rotated.x,
+            y: d.rotated.y,
+            z: d.rotated.z
+          };
+        })
+        .attr('x', function (d) {
+          return d.projected.x;
+        })
+        .attr('y', function (d) {
+          return d.projected.y;
+        })
+        .text(function (d) {
+          return d[1] <= 0 ? d[1] : '';
+        });
+
+      yText.exit().remove();
+
+      d3.selectAll('._3d').sort(d3._3d().sort);
+    }
+
+    function posPointX(d) {
+      return d.projected.x;
+    }
+
+    function posPointY(d) {
+      return d.projected.y;
+    }
+
+    function init() {
+      var cnt = 0;
+      xGrid = [], scatter = [], yLine = [];
+      scatter = processedData.map((datum, id) =>
+        ({
+          x: datum[0],
+          y: datum[1],
+          z: datum[2],
+          id
+        })
+      );
+
+      // for (var z = -j; z < j; z++) {
+      //   for (var x = -j; x < j; x++) {
+      //     xGrid.push([x, 1, z]);
+      //     scatter.push({
+      //       x: x,
+      //       y: d3.randomUniform(0, -10)(),
+      //       z: z,
+      //       id: 'point_' + cnt++
+      //     });
+      //   }
+      // }
+
+      d3.range(-1, 11, 1).forEach(function (d) {
+        yLine.push([-j, -d, -j]);
+      });
+
+      var data = [
+        grid3d(xGrid),
+        point3d(scatter),
+        yScale3d([yLine])
+      ];
+      processData(data, 1000);
+    }
+
+    function dragStart() {
+      mx = d3.event.x;
+      my = d3.event.y;
+    }
+
+    function dragged() {
+      mouseX = mouseX || 0;
+      mouseY = mouseY || 0;
+      beta = (d3.event.x - mx + mouseX) * Math.PI / 230;
+      alpha = (d3.event.y - my + mouseY) * Math.PI / 230 * (-1);
+      var data = [
+        grid3d.rotateY(beta + startAngle).rotateX(alpha - startAngle)(xGrid),
+        point3d.rotateY(beta + startAngle).rotateX(alpha - startAngle)(scatter),
+        yScale3d.rotateY(beta + startAngle).rotateX(alpha - startAngle)([yLine]),
+      ];
+      processData(data, 0);
+    }
+
+    function dragEnd() {
+      mouseX = d3.event.x - mx + mouseX;
+      mouseY = d3.event.y - my + mouseY;
+    }
+
+    d3.selectAll('button').on('click', init);
+
+    init();
+  </script>
+</body>
