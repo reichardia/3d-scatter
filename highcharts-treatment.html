@@ -142,17 +142,29 @@
       yAxis: {
         min: 0,
         max: 350,
-        title: null
+        title: null,
+               title: {
+            enabled: true,
+            text: "Number of prior treatment cycles"
+        },
       },
       xAxis: {
         min: 0,
         max: 10,
-        gridLineWidth: 1
+        gridLineWidth: 1,
+               title: {
+            enabled: true,
+            text: "Most recent dose"
+        },
       },
       zAxis: {
         min: 80,
         max: 240,
-        showFirstLabel: false
+        showFirstLabel: false,
+               title: {
+            enabled: true,
+            text: "Prior treatment interval"
+        },
       },
       legend: {
         enabled: false
